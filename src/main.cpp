@@ -9,14 +9,14 @@ const double a=0.5;
 const int servoPin = 9;
 
 
- 
+// PID tunning
 float Kp = 2;
 float Ki = 1;
 float Kd = 4;
 double Setpoint, Input, Output, ServoOutput;                                       
 
 
-
+// PID and servo initalization
 PID myPID(&Input, &Output, &Setpoint, Kp, Ki, Kd, REVERSE);    
 Servo myServo;
 
